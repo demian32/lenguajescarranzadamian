@@ -17,5 +17,7 @@ public class Lenjuagescarranzadamian {
      */
     public static void main(String[] args) {
          System.out.println("Bienvenidos al curso de lenguajes!!!");
+         System.out.println("Algo mal");
+        
     
 }}
