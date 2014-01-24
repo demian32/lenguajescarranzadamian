@@ -11,5 +11,8 @@ package lenjuagescarranzadamian;
  * @author Deyanira
  */
 public class Circulo {
-    
+    float radio;
+    public Circulo(){
+        radio=10;
+    }
 }
