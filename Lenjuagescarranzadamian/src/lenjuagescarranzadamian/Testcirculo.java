@@ -8,12 +8,13 @@ package lenjuagescarranzadamian;
 
 /**
  *
- * @author Deyanira
+
  */
 public class Testcirculo {
     public static void main(String[] args) {
         Circulo c=new Circulo();
-        System.out.println(c.radio);
+        c.radio=-20;
+        c.validar();
     }
     
 }
