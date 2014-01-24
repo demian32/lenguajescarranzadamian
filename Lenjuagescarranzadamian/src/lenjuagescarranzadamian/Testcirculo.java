@@ -13,7 +13,6 @@ package lenjuagescarranzadamian;
 public class Testcirculo {
     public static void main(String[] args) {
         Circulo c=new Circulo();
-        c.radio=-20;
         c.validar();
     }
     
