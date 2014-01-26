@@ -2,6 +2,7 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
+ * Bien!!!  ya tienes primer tarea ahora trata de impedir que el radio no sea negativo
  */
 
 package lenjuagescarranzadamian;
