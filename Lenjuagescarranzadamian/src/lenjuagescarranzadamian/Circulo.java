@@ -13,7 +13,7 @@ package lenjuagescarranzadamian;
 public class Circulo {
     float radio;
     public Circulo(){
-        radio=0;       
+        radio=-9;       
     }
     public void validar(){
     
@@ -21,9 +21,9 @@ public class Circulo {
         radio=(radio*(-1));
     System.out.println(radio);
         }
-    else 
+    else {
         System.out.println(radio);
-    
+        }
     
     }
 }
