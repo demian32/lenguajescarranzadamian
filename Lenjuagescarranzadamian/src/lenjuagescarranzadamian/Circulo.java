@@ -13,14 +13,17 @@ package lenjuagescarranzadamian;
 public class Circulo {
     float radio;
     public Circulo(){
-        radio=10;       
+        radio=0;       
     }
     public void validar(){
-    if (radio<0)
-            System.out.println("no negativos");
-             radio=(radio*(-1));         
-    if(radio<0)       
+    
+        if (radio<0){ 
+        radio=(radio*(-1));
+    System.out.println(radio);
+        }
+    else 
         System.out.println(radio);
+    
     
     }
 }
