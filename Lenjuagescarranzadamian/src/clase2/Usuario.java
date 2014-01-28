@@ -11,7 +11,7 @@ package clase2;
  * @author T107
  */
 public class Usuario {
-   String nombre; 
+   private String nombre; 
     private int edad;
 
     public int getEdad() {
@@ -25,6 +25,14 @@ public class Usuario {
         }
         
         this.edad = edad;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     
