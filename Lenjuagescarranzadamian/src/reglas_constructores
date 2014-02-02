@@ -1,0 +1,82 @@
+1.
+public class test{ int x;}
+
+public class main{
+    public static void main(string org[]){
+             test algo=new test();
+             System.out.println(algo.x);}}
+//como podemos ver el uso de un constructor, al no ser declarado en la clase se usara el constructor por defecto y NO TIENE ARGUMENTOS asi que es un numerico 
+
+(primitivo) lo inicializa en cero por defecto
+----------------------------------------------------------------------------------------------------------------------------------
+1.1.
+public class test{ String x;}
+
+public class main{
+    public static void main(string org[]){
+             test algo=new test();
+             System.out.println(algo.x);}}
+//como podemos ver el uso de un constructor, al no ser declarado en la clase se usara el constructor por defecto y NO TIENE ARGUMENTOS asi que es un atributo 
+
+referenciado lo que inicializa en null por defecto.
+--------------------------------------------------------------------------------------------------------------------------------------- 
+2.
+public class test{ public test(){} }
+//aqui el programa compila y se ejecuta ya que lo unico que hicimos fue poner el constructor por defecto que no es necesario ponerlo cuando no inicializamos un 
+
+atributo
+----------------------------------------------------------------------------------------------------------------------------------------
+3.
+public class test{ test(); }
+//marcara error ya que este constructor solo se usa cuando mandamos a llamar al constructor y le asignamos un nuevo objeto
+----------------------------------------------------------------------------------------------------------------------------------------
+4.
+public class test{ public void test(){} }
+//aqui compilara y se ejecutara muy bien ya que cuando utilizemos un constructor no lleva tipo de retorno ya que dicho constructor se convertira en un metodo
+-----------------------------------------------------------------------------------------------------------------------------------------
+5.
+public class test{ 
+                public test(){
+                int y=5;
+                System.out.println(y); }}
+//al codificar esto no marcara error ya que el constructor permite inicializar los atributos aunque en este caso declaramos una variable local, el problema seria al 
+
+usarlo en un main ya que es una variable local.
+-----------------------------------------------------------------------------------------------------------------------------------------
+6.
+public class test{
+                 public test(){
+                 int y;
+                 System.out.println(y);}}
+//marcara error ya que esta variable local hecha dentro del constructor no la inicializamos y no identifica su valor y el constructor no lo hace por defecto ya que es 
+
+una variable local asi que marcara error en la linea del System.
+-------------------------------------------------------------------------------------------------------------------------------------------
+7.
+public class test{
+                 int y;
+                  public test(){
+                  System.out.println(y);}}
+//ente codigo no marcara error ya que estamos declarando la variable afuera del constructor, asi que no es una variable local y dentro del constructor lo inicializa 
+
+por defecto en 0
+-------------------------------------------------------------------------------------------------------------------------------------------
+8.
+public class test{ int x; }
+public class main{
+  int x;
+public static void main(string w[]){
+   test s=new test();
+   System.out.printl(x);
+}}
+//marca erro ya que en primera no utilizamos la variable de a clase y despues utilizamos una variable local que no tiene valor y no se inicializa por defecto
+--------------------------------------------------------------------------------------------------------------------------------------------
+9.
+public class test{ int x; }
+public class main{
+public static void main(string w[]){
+    int x;
+   test s=new test();
+   System.out.printl(x);
+}}
+//error por el static ya que si compila pero no se ejecuta(tema que se vera mas adelante)
