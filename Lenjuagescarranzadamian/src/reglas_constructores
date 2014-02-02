@@ -1,3 +1,7 @@
+*********************************************************************************************************************************
+1.SI UNA CLASE NO TIENE CONSTRUCTOR DECLARADO(ESCRITO) AL CREAR UN OBJETO SE USARA EL CONSTRUCTOR POR DEFECTO, EL CUAL 
+NO TIENE ARGUMENTOS, SU FUNCION DE ESTE CONSTRUCTOR ES INICIALIZZAR ATRIBUTOS A SU VALOR POR DEFECTO
+
 1.
 public class test{ int x;}
 
@@ -80,3 +84,5 @@ public static void main(string w[]){
    System.out.printl(x);
 }}
 //error por el static ya que si compila pero no se ejecuta(tema que se vera mas adelante)
+
+****************************************************************************************************************************
