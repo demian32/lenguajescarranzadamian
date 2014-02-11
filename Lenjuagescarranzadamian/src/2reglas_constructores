@@ -1,0 +1,97 @@
+*/ejercicio 1. existen algun error*/
+/*tenemos la clase*/
+
+
+public class Hola{
+
+public Hola(){}
+public Hola(int x){}
+public Hola(float y){}
+
+}
+
+
+/*se tiene la siguiente clase*/
+
+public class prueba{
+
+public static void main(String args[])}
+  /*es correcta*/
+  Hola x=new Hola();
+  }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+*/ejercicio 2. existen algun error*/
+
+public class Hola{
+
+public Hola(int x){}//Nota, solo combinaciones distintas
+public Hola(float y){}
+public Hola(int x, float y){}
+public Hola(int y, float x){}/* error en esta linea ya que se esta duplicado el tipo de dato: int y float*/ */
+public Hola(float x,int y){}
+public Hola(float x,int y, float z){}
+ 
+
+}
+public class prueba{
+
+public static void main(String args[])}
+  
+  Hola ob1=new Hola();*/incocrrecto ya que al hacer sobrecarga de constructores se eliminan el constructor por defecto*/
+  Hola ob1=new Hola(-7);//es correcto
+  Hola ob1=new Hola(5.4f);//es correcto
+  Hola ob1=new Hola(4.5f,5);//es correcto
+  Hola ob1=new Hola(5,4.6f);//incorrecto ya que no se sabe cual de los dos constructores utilizar
+  
+
+}
+
+
+/ejercicio 3. Cuales renglones marca error*/
+
+
+public class prueba{
+	public static void main(String args[]){
+	byte x=2;
+	short y=2;
+	int z=2;
+	long w=2;
+
+
+	z=x; */ de byte a int si se puede 
+	w=x; */ de byte a long si se pude
+	y=z; */ de int a short no se pude
+	z=w; */  de long a int no se puede
+	x=w; */ de long a byte menos se puede 
+	y=x; */ de byte a short si se puede
+	w=y; */ de short a long claro que se puede
+	x=z; */ de int a byte claro que no se puede
+}
+}
+
+
+/ejercicio 4. Corregir con Casting forzado los que estuvieran del ejercicio anterior*/
+
+public class prueba{
+	public static void main(String args[]){
+	byte x=2;
+	short y=2;
+	int z=2;
+	long w=2;
+
+
+	z=x; */ de byte a int si se puede 
+	w=x; */ de byte a long si se pude   
+	y= z; */ de int a short no se pude    		 */ Casting forzado y= (short)z;
+	z= w; */  de long a int no se puede    		 */ Casting forzado z= (int)w;
+	x= w; */ de long a byte menos se puede  	 */ Casting forzado x= (byte)w;
+	y=x; */ de byte a short si se puede
+	w=y; */ de short a long claro que se puede
+	x= z; */ de int a byte claro que no se puede     */ Casting forzado x= (byte)z;
+}
+}
+
+
