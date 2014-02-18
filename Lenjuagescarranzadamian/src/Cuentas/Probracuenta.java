@@ -20,7 +20,13 @@ public class Probracuenta {
         c1.setId(1);
         c1.setNombre("alejandro");
         c1.setSaldo(6000.5f);
+        c1.Crearcuenta();
         
+        CuentaNomina c2=new CuentaNomina();
+        c2.setId(1);
+        c2.setNombre("alejandro");
+        c2.setSaldo(6000.5f);
+        c2.Crearcuenta();
         
         
     }
