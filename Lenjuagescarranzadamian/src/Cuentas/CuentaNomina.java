@@ -11,7 +11,7 @@ package Cuentas;
  * @author T107
  */
 public class CuentaNomina extends Cuenta {
-    public void Crearcuenta (){
+    public void Crearcuentanomina (){
    System.out.println("cuenta creada Nomina");
     }
     

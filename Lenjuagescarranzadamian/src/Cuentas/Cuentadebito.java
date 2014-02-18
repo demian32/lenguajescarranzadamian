@@ -12,7 +12,7 @@ package Cuentas;
  */
 public class Cuentadebito extends Cuenta {
     
-    public void Crearcuenta (){
+    public void CrearcuentaDebito (){
    System.out.println("cuenta creada debito");
     }
 }
