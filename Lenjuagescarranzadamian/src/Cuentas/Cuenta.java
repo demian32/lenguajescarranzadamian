@@ -6,6 +6,8 @@
 
 package Cuentas;
 
+import usuario.Validacion;
+
 /**
  *
  * @author T107
@@ -35,7 +37,8 @@ public class Cuenta {
         return saldo;
     }
 
-    public void setSaldo(Float saldo) {
+    public void setSaldo(Float saldo) throws Sinsueldo {
+      
         this.saldo = saldo;
     }
     public void Crearcuenta (){
