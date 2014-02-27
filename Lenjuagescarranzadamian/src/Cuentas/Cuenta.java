@@ -15,7 +15,7 @@ import usuario.Validacion;
 public class Cuenta {
     private int id;
     private String nombre;
-    private Float saldo;
+    private float saldo;
 
     public int getId() {
         return id;
@@ -37,8 +37,8 @@ public class Cuenta {
         return saldo;
     }
 
-    public void setSaldo(Float saldo) throws Sinsueldo {
-      
+    public void setSaldo(float saldo) throws Sinsueldo {
+      Validar.validarsaldo(saldo);
         this.saldo = saldo;
     }
     public void Crearcuenta (){

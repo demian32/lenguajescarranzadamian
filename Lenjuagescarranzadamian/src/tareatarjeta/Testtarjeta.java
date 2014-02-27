@@ -14,7 +14,6 @@ public class Testtarjeta {
     public static void main(String[] args) {
         
         Tarjeta d=new Tarjeta();
-        d.getNombrecliente();
        System.out.println(d.getNombrecliente());
     }
 
