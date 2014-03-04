@@ -11,6 +11,13 @@ package Cuentas;
  * @author T107
  */
 public class CuentaAhorro extends Cuenta {
+
+    public CuentaAhorro(String nombre, float saldo) throws Sinsueldo {
+        super(nombre, saldo);
+    }
+
+   
+    
     public void Crearcuentaahorro (){
    System.out.println("cuenta creada Ahorro");
     }

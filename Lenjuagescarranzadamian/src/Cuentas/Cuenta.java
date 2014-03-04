@@ -17,6 +17,13 @@ public class Cuenta {
     private String nombre;
     private float saldo;
 
+    public Cuenta(String nombre, float saldo)throws Sinsueldo {
+        Validar.validarsaldo(saldo);
+        this.nombre = nombre;
+        this.saldo = saldo;
+    }
+    
+
     public int getId() {
         return id;
     }
@@ -44,6 +51,12 @@ public class Cuenta {
     public void Crearcuenta (){
    System.out.println("cuenta creada felicidades  y ......Animoooooooooooo");
     }
+
+    @Override
+    public String toString() {
+        return "Cuenta{" + "id=" + id + ", nombre=" + nombre + ", saldo=" + saldo + '}';
+    }
+    
     }
     
     

@@ -11,6 +11,10 @@ package Cuentas;
  * @author T107
  */
 public class Cuentadebito extends Cuenta {
+
+    public Cuentadebito(String nombre, float saldo)throws Sinsueldo  {
+        super(nombre, saldo);
+    }
     
     public void CrearcuentaDebito (){
    System.out.println("cuenta creada debito");
