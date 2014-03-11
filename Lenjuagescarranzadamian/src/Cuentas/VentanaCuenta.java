@@ -109,8 +109,12 @@ public class VentanaCuenta extends javax.swing.JFrame {
         etiquetaresultado.setText(c.toString());
        }catch(Sinsueldo e){
          etiquetaresultado.setText(e.getMessage());
-         dispose();
+         //dispose();
+       }catch(Exception algo){
+          //etiquetaresultado.setText(algo.getMessage());
+          etiquetaresultado.setText("buuu torpe letras no se puede");
        }
+       
     }//GEN-LAST:event_botoncalcularActionPerformed
 
     /**
