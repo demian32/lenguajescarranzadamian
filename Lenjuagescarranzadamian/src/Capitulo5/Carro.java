@@ -5,14 +5,13 @@
  */
 
 package Capitulo5;
+ import java.util.Random;
 
-/**
- *
- * @author T107
- */
 public class Carro {
 
     public static void main(String[] args) {
+        Random rnd = new Random();
+                 System.out.println(rnd.nextInt(1+1+1)+-1);
     }                                                                                                              
     
 }
