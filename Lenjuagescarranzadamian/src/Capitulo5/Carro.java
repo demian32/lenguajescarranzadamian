@@ -39,6 +39,7 @@ public class Carro {
         });
         
         t1[i].start();
+        
          
     }   }                                                                                                           
     
