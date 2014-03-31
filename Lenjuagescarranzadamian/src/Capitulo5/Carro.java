@@ -5,6 +5,7 @@
  */
 
 package Capitulo5;
+import java.awt.Point;
  import java.util.Random;
 
 public class Carro {
@@ -15,18 +16,20 @@ public class Carro {
         Thread t=new  Thread (new Runnable(){
             public int x;
             public int y;
+            public int x0,y0=0;
             public void run(){
                 while(true){
                 try {
                     Thread.sleep(5000);
                     //creamos un objeto de una clase que se llama calendar
                     Random rnd = new Random();
-                    
                     x=(rnd.nextInt(1+1+1)+-1);
                     y=(rnd.nextInt(1+1+1)+-1);
-                    
-                    System.out.println(x+" "+y);
-                    
+                    Point posicion=new Point(x0,y0);
+                    x0=x0+x;
+                    y0=y0+y;
+                    System.out.println(posicion);
+                        
                 } catch (InterruptedException ex){
                 }}
             }
