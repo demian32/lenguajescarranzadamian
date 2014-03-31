@@ -12,8 +12,11 @@ public class Carro {
 
     public static void main(String[] args) {
         
+        Thread[] t1=new Thread[5];
+        for(int i=0;i<5;i++)
+        {
         
-        Thread t=new  Thread (new Runnable(){
+         t1[i]=new  Thread (new Runnable(){
             public int x;
             public int y;
             public int x0,y0=0;
@@ -34,8 +37,9 @@ public class Carro {
                 }}
             }
         });
-        t.start();
+        
+        t1[i].start();
          
-    }                                                                                                              
+    }   }                                                                                                           
     
 }
