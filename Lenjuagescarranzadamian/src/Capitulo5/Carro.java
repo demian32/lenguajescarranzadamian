@@ -24,7 +24,7 @@ public class Carro {
                 while(true){
                 try {
                     Thread.sleep(5000);
-                    //creamos un objeto de una clase que se llama calendar
+                    
                     Random rnd = new Random();
                     x=(rnd.nextInt(1+1+1)+-1);
                     y=(rnd.nextInt(1+1+1)+-1);
