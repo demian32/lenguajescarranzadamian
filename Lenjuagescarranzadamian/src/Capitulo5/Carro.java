@@ -8,7 +8,7 @@ package Capitulo5;
 import java.awt.Point;
  import java.util.Random;
 
-public class Carro {
+public class Carro { 
 
     public static void main(String[] args) {
         
