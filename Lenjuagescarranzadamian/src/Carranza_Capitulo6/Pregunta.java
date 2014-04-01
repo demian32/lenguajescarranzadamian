@@ -17,7 +17,7 @@ public class Pregunta {
     private String titulo;
     private ArrayList<Opcion> opciones;
 
-    public Pregunta(Integer id, String titulo, ArrayList<Opcion> opciones) {
+    public  Pregunta(Integer id, String titulo, ArrayList<Opcion> opciones) {
         this.id = id;
         this.titulo = titulo;
         this.opciones = opciones;

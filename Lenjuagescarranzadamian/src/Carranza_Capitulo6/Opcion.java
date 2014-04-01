@@ -20,9 +20,6 @@ public class Opcion {
         this.titulo = titulo;
         this.valor = valor;
     }
-
-    
-
     public String getTitulo() {
         return titulo;
     }
