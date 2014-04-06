@@ -5,15 +5,23 @@
  */
 
 package Capitulo7;
-
+import java.util.*;
 import java.io.*;
 public class GuardarUsuario {
-    public static void guardar(Usuario u)throws Exception{
+
+    public void guardar(ArrayList<Usuario> u)throws Exception{
+    //public static void guardar(Usuario u)throws Exception{
         File file=new File("Arhivo.xxx");
         FileOutputStream fos=new FileOutputStream(file);
         ObjectOutputStream oos=new ObjectOutputStream(fos);
         oos.writeObject(u);
+        
     }
+    
+    
+    
+    
+    
     public static Usuario leer()throws Exception{
         File file=new File("Arhivo.xxx");
         FileInputStream fis=new FileInputStream(file);

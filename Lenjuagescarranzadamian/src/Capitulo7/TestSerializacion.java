@@ -12,8 +12,8 @@ public class TestSerializacion {
      * @param args the command line arguments
      */
     public static void main(String[] args)throws Exception {
-        Usuario un =new Usuario("damian",20,"hola");
-        GuardarUsuario.guardar(un); 
+        Usuario un =new Usuario("damiannf",22,"holass");
+        GuardarUsuario.guardar();
     }
     
 }
