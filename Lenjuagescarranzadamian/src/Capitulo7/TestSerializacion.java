@@ -13,7 +13,7 @@ public class TestSerializacion {
      */
     public static void main(String[] args)throws Exception {
         Usuario un =new Usuario("damiannf",22,"holass");
-        GuardarUsuario.guardar();
+       
     }
     
 }

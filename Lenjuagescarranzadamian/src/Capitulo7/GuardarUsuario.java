@@ -9,20 +9,30 @@ import java.util.*;
 import java.io.*;
 public class GuardarUsuario {
 
-    public void guardar(ArrayList<Usuario> u)throws Exception{
+    public ArrayList<Usuario> u=new ArrayList<Usuario>();
+    public void agregarPersona(Usuario us){
+        this.u.add(us);
+    }
+    public static void Guardar()throws Exception{
+        File file=new File("archivito.xxx");
+        FileOutputStream fos=new FileOutputStream(file);
+        ObjectOutputStream oos=new ObjectOutputStream(fos);
+      oos.writeObject(oos);
+    }
+        
+    
+    
+    
+    
+    /*public void guardar(ArrayList<Usuario> u)throws Exception{
     //public static void guardar(Usuario u)throws Exception{
         File file=new File("Arhivo.xxx");
         FileOutputStream fos=new FileOutputStream(file);
         ObjectOutputStream oos=new ObjectOutputStream(fos);
-        oos.writeObject(u);
-        
-    }
-    
-    
-    
-    
-    
+        oos.writeObject(u);*/
+
     public static Usuario leer()throws Exception{
+        
         File file=new File("Arhivo.xxx");
         FileInputStream fis=new FileInputStream(file);
         ObjectInputStream ois=new ObjectInputStream(fis);
